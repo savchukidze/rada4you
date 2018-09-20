@@ -1,0 +1,16 @@
+Package: rada4you
+Type: Package
+Title: Work with rada4you.org API
+Version: 0.1.0
+Author: Andrii Savchuk
+Maintainer: Andrii Savchuk <savchuk@opora.org.ua>
+Description: Робота з API порталу "Вони голосують для тебе" rada4you.org
+License:  GNU General Public License v3.0
+Encoding: UTF-8
+LazyData: true
+Imports:
+  httr,
+  jsonlite,
+  magrittr,
+  stringr
+RoxygenNote: 6.1.0

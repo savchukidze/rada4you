@@ -27,10 +27,15 @@ policy_info <- function (id = 1, key)
          response <- httr::content(request, as = "text")
          json <- jsonlite::fromJSON(response)
 
+         null <- function(x) {
+            if (is.null(x))
+               return("NA")
+            return(x)
+         
          detail <- data.frame(
                         policy_id = json$id,
                         policy_name = json$name,
-                        description = json$description,
+                        description = null(json$description),
                         provisional = json$provisional,
                         vote_id = json$policy_divisions$division$id,
                         vote_name = json$policy_divisions$division$name,

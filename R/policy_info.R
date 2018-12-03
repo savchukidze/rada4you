@@ -35,7 +35,7 @@ policy_info <- function (id = 1, key)
             }
          
          detail <- data.frame(
-                        policy_id = nullul(json$id),
+                        policy_id = null(json$id),
                         policy_name = null(json$name),
                         description = null(json$description),
                         provisional = null(json$provisional),

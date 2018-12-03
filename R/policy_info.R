@@ -51,6 +51,7 @@ policy_info <- function (id = 1, key)
                                                    stringsAsFactors = F)
 
          details <- rbind.data.frame(details, detail)
+         details <- na.omit(details)
          details$date <- as.Date(details$date)
 
          Sys.sleep(1)

@@ -29,7 +29,7 @@ policy_info <- function (id = 1, key)
 
          null <- function(x) {
             if (is.null(x))
-               return("NA")
+               return(" ")
             return(x)
             
             }

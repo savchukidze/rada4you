@@ -33,17 +33,17 @@ policy_info <- function (id = 1, key)
             return(x)
          
          detail <- data.frame(
-                        policy_id = json$id,
-                        policy_name = json$name,
+                        policy_id = nullul(json$id),
+                        policy_name = null(json$name),
                         description = null(json$description),
-                        provisional = json$provisional,
-                        vote_id = json$policy_divisions$division$id,
-                        vote_name = json$policy_divisions$division$name,
-                        date = json$policy_divisions$division$date,
-                        time = json$policy_divisions$division$clock_time,
-                        aye_votes = json$policy_divisions$division$aye_votes,
-                        no_votes = json$policy_divisions$division$no_votes,
-                        rebellions = json$policy_divisions$division$rebellions,
+                        provisional = null(json$provisional),
+                        vote_id = null(json$policy_divisions$division$id),
+                        vote_name = null(json$policy_divisions$division$name),
+                        date = null(json$policy_divisions$division$date),
+                        time = null(json$policy_divisions$division$clock_time),
+                        aye_votes = null(json$policy_divisions$division$aye_votes),
+                        no_votes = null(json$policy_divisions$division$no_votes),
+                        rebellions = null(json$policy_divisions$division$rebellions),
 
                                                    stringsAsFactors = F)
 

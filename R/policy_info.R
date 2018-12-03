@@ -29,7 +29,7 @@ policy_info <- function (id = 1, key)
 
          null <- function(x) {
             if (is.null(x))
-               return(" ")
+               return("NA")
             return(x)
             
             }
@@ -51,7 +51,7 @@ policy_info <- function (id = 1, key)
                                                    stringsAsFactors = F)
 
          details <- rbind.data.frame(details, detail)
-         details <- na.omit(details)
+         details <- dplyr::na.omit(details)
          details$date <- as.Date(details$date)
 
          Sys.sleep(1)

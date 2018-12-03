@@ -33,6 +33,7 @@ policy_info <- function (id = 1, key)
             return(x)
             
             }
+         print(json$id)
          
          detail <- data.frame(
                         policy_id = null(json$id),
@@ -41,7 +42,7 @@ policy_info <- function (id = 1, key)
                         provisional = null(json$provisional),
                         vote_id = null(json$policy_divisions$division$id),
                         vote_name = null(json$policy_divisions$division$name),
-                        date = json$policy_divisions$division$date,
+                        date = null(json$policy_divisions$division$date),
                         time = null(json$policy_divisions$division$clock_time),
                         aye_votes = null(json$policy_divisions$division$aye_votes),
                         no_votes = null(json$policy_divisions$division$no_votes),

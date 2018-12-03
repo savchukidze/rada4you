@@ -31,6 +31,8 @@ policy_info <- function (id = 1, key)
             if (is.null(x))
                return("NA")
             return(x)
+            
+            }
          
          detail <- data.frame(
                         policy_id = nullul(json$id),

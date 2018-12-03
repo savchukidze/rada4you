@@ -51,13 +51,14 @@ policy_info <- function (id = 1, key)
                                                    stringsAsFactors = F)
 
          details <- rbind.data.frame(details, detail)
-         details <- dplyr::na.omit(details)
-         details$date <- as.Date(details$date)
+         
 
          Sys.sleep(1)
       }
    }
-
+         details <- na.omit(details)
+         details$date <- as.Date(details$date)
+   
    return(details)
 
 }

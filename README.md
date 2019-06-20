@@ -1,4 +1,4 @@
-## rada4you <img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/38693370_10155596164960108_1633964967109591040_n.png?_nc_cat=0&oh=8b937da49794ca85800d38a1e1ee561a&oe=5C612F63" width="150" height="150" align="right" />
+## rada4you <img src="https://pbs.twimg.com/profile_images/710772571516628992/WCNhC6ZY.jpg" width="150" height="150" align="right" />
 
 
 Портал "rada4you" розроблений Громадянською мережею ОПОРА та партнерами.

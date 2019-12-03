@@ -54,6 +54,22 @@ mps <- function (key)
          str_replace_all(pattern = "Фракція Політичної партії \"Опозиційний блок\" у Верховній Раді України восьмого скликання",
                          replacement = "Опозиційний блок")
 
+   #9скликання
+   people$party <- people$party %>%
+   str_replace_all(pattern = "депутатська група За майбутнє", 
+                   replacement = 'За майбутнє') %>% 
+   str_replace_all(pattern = "фракція Батьківщина", 
+                   replacement = 'Батьківщина') %>% 
+   str_replace_all(pattern = "фракція Голос", 
+                   replacement = 'Голос') %>% 
+   str_replace_all(pattern = "фракція Європейська солідарність", 
+                   replacement = 'ЄС') %>% 
+   str_replace_all(pattern = "фракція Опозиційна платформа - За життя", 
+                   replacement = 'ОПЗЖ') %>% 
+   str_replace_all(pattern = "фракція Слуга народу", 
+                   replacement = 'Слуга народу')
+      
+      
       detach(package:magrittr)
       detach(package:stringr)
 

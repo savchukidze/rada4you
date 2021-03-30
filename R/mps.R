@@ -67,7 +67,9 @@ mps <- function (key)
    str_replace_all(pattern = "фракція Опозиційна платформа - За життя", 
                    replacement = 'ОПЗЖ') %>% 
    str_replace_all(pattern = "фракція Слуга народу", 
-                   replacement = 'Слуга народу')
+                   replacement = 'Слуга народу') %>%
+   stringr::str_replace_all(pattern = "депутатська група ДОВІРА", 
+                            replacement = 'Довіра')
       
       
       detach(package:magrittr)

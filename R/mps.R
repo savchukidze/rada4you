@@ -68,7 +68,7 @@ mps <- function (key)
                    replacement = 'ОПЗЖ') %>% 
    str_replace_all(pattern = "фракція Слуга народу", 
                    replacement = 'Слуга народу') %>%
-   stringr::str_replace_all(pattern = "депутатська група ДОВІРА", 
+   str_replace_all(pattern = "депутатська група ДОВІРА", 
                             replacement = 'Довіра')
       
       
